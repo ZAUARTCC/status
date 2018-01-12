@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ZAUARTCC/status/issues"
   },
-  "homepage": "https://github.com/ZAUARTCC/status#readme"
+  "homepage": "https://github.com/ZAUARTCC/status#readme",
+  "dependencies": {
+    "request-promise": "^4.2.2"
+  }
 }
