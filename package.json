@@ -1,0 +1,20 @@
+{
+  "name": "@zauartcc/status",
+  "version": "1.0.0",
+  "description": "Status Cheker and Provider for ZAU",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZAUARTCC/status.git"
+  },
+  "author": "Aaron Osher <aaron@aaronosher.io>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/ZAUARTCC/status/issues"
+  },
+  "homepage": "https://github.com/ZAUARTCC/status#readme"
+}
