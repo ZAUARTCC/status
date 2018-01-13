@@ -4,9 +4,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-exports.default = function (start) {
+exports.default = function (start, url, port) {
 
-    var ts3 = new _teamspeak.Client('ts.zauartcc.org', 10011);
+    var ts3 = new _teamspeak.Client(url, port);
 
     ts3.on('error', function (error) {
         return console.log(error);
