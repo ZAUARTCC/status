@@ -1,8 +1,10 @@
-var rp = require('request-promise');
-var fs = require('fs');
-var Client = require('teamspeak').Client;
+import rp from 'request-promise';
+import fs from 'fs';
+import teamspeak from './modules/teamspeak';
 
-var start = Date.now();
+const start = Date.now();
+
+teamspeak(start);
 
 var forum = rp('https://dev.zauartcc.org/forum');
 var mainSite = rp('https://www.zauartcc.org/');
@@ -46,14 +48,3 @@ moodle.then(() => {
 }).catch(() => {
   console.log('Moodle: Offline');
 });
-
-
-let ts3 = new Client('ts.zauartcc.org', 10011);
-
-ts3.on('error', error => console.log(error));
-
-ts3.authenticate('username', 'password')
-    .then(() => ts3.send('use', '1')) //Use virtual server with ID=1
-    .then(console.log('Teamspeak: %s ms', Date.now() - start))
-    .then(() => ts3.send('quit'))
-    .catch(error => console.log('Teamspeak Offline'));

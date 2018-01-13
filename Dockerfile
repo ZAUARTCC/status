@@ -1,7 +1,8 @@
 FROM node:alpine
 
-COPY . .
+COPY ./dist ./
+COPY package.json .
 
 RUN npm install --prod
 
-CMD npm start
+CMD node app.js
