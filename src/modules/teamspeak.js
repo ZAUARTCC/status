@@ -1,8 +1,8 @@
 import { Client } from 'teamspeak';
 
-export default function(start) {
+export default function(start, url, port) {
 
-  let ts3 = new Client('ts.zauartcc.org', 10011);
+  let ts3 = new Client(url, port);
 
   ts3.on('error', error => console.log(error));
 

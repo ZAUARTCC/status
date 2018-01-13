@@ -1,0 +1,32 @@
+{
+  "teamspeak": {
+    "url": "ts.zauartcc.org",
+    "port": 10011
+  },
+  "websites": [
+    {
+      "name": "Main Site",
+      "url": "https://www.zauartcc.org"
+    },
+    {
+      "name": "Forum",
+      "url": "https://dev.zauartcc.org/forum"
+    },
+    {
+      "name": "Admin",
+      "url": "https://www.zauartcc.org/admin"
+    },
+    {
+      "name": "Moodle",
+      "url": "https://training.dev.zauartcc.org"
+    },
+    {
+      "name": "Setmore",
+      "url": "https://zauartcc.setmore.com"
+    },
+    {
+      "name": "Slack",
+      "url": "https://zauartcc.slack.com"
+    }
+  ]
+}
