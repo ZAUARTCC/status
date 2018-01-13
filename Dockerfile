@@ -1,6 +1,9 @@
 FROM node:alpine
 
-COPY ./dist ./
+WORKDIR /usr/src/app
+
+COPY ./dist .
+COPY services.json .
 COPY package.json .
 
 RUN npm install --prod
